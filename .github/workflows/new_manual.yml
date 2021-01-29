@@ -1,4 +1,4 @@
-name: New Manual Trigger
+name: new_manual_yml
 
 on: workflow_dispatch
 
