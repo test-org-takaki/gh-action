@@ -5,7 +5,7 @@ name: Manual Trigger
 
 
 on: 
-  workiflow_dispath:
+  workflow_dispatch:
     inputs:
     numOctocats:
       description: 'Number of Octocats'
