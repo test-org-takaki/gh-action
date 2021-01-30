@@ -1,6 +1,19 @@
 name: Manual Trigger
 
-on: [ workflow_dispatch ]
+
+
+
+
+on: 
+  workiflow_dispath:
+    inputs:
+    numOctocats:
+      description: 'Number of Octocats'
+      required: false
+      default: '1'
+    octocatEyeColor:
+      description: 'Eye color of the Octocats'
+      required: true
 
 jobs:
   build:
