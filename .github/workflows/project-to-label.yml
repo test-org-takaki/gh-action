@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: project to label 1
-        if: github.event.action == 'labeled' && github.event.label.name == "Status\: test1"
+        if: github.event.action == 'labeled' && github.event.label.name == 'Status:\ test1'
         uses: alex-page/github-project-automation-plus@v0.3.0
         with:
           project: 'Project name1'
