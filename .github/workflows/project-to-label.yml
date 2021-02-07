@@ -1,0 +1,15 @@
+name: 'project to label'
+
+on: [issues]
+
+jobs:
+  automate-project-columns:
+    runs-on: ubuntu-latest
+    steps:
+      - name: project to label 1
+        if: github.event.action == 'labeled' && github.event.label.name == 'Status: test1'
+        uses: alex-page/github-project-automation-plus@v0.3.0
+        with:
+          project: 'Project name1'
+          column: 'Column naem1'
+#          repo-token: ${{ secrets.KANBAN_UPDATE_PERSONAL_ACCESS_TOKEN }}
