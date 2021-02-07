@@ -15,7 +15,7 @@ jobs:
           repo-token: ${{ secrets.GH_TOKEN }}
           #repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: project to label 2-1
-        if: github.event.action == 'labeled' && contains(fromJSON("['Status::test2-1','Status::test2-2']"), github.event.label.name)
+        if: github.event.action == 'labeled' && contains(fromJSON('["Status::test2-1","Status::test2-2"]'), github.event.label.name)
         uses: alex-page/github-project-automation-plus@v0.3.0
         with:
           project: 'Project name1'
