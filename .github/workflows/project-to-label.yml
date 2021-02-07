@@ -12,4 +12,4 @@ jobs:
         with:
           project: 'Project name1'
           column: 'Column name1'
-#          repo-token: ${{ secrets.KANBAN_UPDATE_PERSONAL_ACCESS_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
