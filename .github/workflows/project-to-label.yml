@@ -12,4 +12,5 @@ jobs:
         with:
           project: 'Project name1'
           column: 'Column name1'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GT_TOKEN }}
+          #repo-token: ${{ secrets.GITHUB_TOKEN }}
