@@ -14,3 +14,17 @@ jobs:
           column: 'Column name1'
           repo-token: ${{ secrets.GH_TOKEN }}
           #repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: project to label 2-1
+        if: github.event.action == 'labeled' && github.event.label.name == 'Status::test2-1'
+        uses: alex-page/github-project-automation-plus@v0.3.0
+        with:
+          project: 'Project name1'
+          column: 'Column name2'
+          repo-token: ${{ secrets.GH_TOKEN }}
+      - name: project to label 2-2
+        if: github.event.action == 'labeled' && github.event.label.name == 'Status::test2-2'
+        uses: alex-page/github-project-automation-plus@v0.3.0
+        with:
+          project: 'Project name1'
+          column: 'Column name2'
+          repo-token: ${{ secrets.GH_TOKEN }}
