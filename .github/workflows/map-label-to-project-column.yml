@@ -1,4 +1,4 @@
-name: 'project to label'
+name: label to project column
 
 on: [issues]
 
