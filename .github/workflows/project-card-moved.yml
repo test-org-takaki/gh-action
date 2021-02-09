@@ -7,4 +7,5 @@ jobs:
     name: Auto card labeler
     runs-on: ubuntu-latest
     steps:
-      - uses: technote-space/auto-card-labeler@v1
+      - uses: takaki/auto-card-labeler@HEAD
+#      - uses: technote-space/auto-card-labeler@v1
