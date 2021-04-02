@@ -10,4 +10,4 @@ jobs:
       url: http://example.com/productino
     steps:
     - name: Deploy
-      run: ecoh deploy
+      run: echp deploy
