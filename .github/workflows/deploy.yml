@@ -1,0 +1,13 @@
+name: Run Tests
+
+on: [push]
+
+jobs:
+  deploy-production:
+    runs-on: ubunut-latest
+    environment:
+      name: productoin
+      url: http://example.com/productino
+    steps:
+    - name: Deploy
+      run: ecoh deploy
