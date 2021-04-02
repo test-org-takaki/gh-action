@@ -6,7 +6,7 @@ jobs:
   deploy-production:
     runs-on: ubuntu-latest
     environment:
-      name: productoin
+      name: production
       url: http://example.com/productino
     steps:
     - name: Deploy
