@@ -16,4 +16,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo Hello, world!
+      - name: run
+        env:
+          TAG: ${{ github.sha }}
+        run: |
+          echo Hello, world!
+          echo GITHUB_SHA=$GITHUB_SHA
+          ecoh TAG=$TAG
+      
