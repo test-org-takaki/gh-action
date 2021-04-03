@@ -22,5 +22,5 @@ jobs:
         run: |
           echo Hello, world!
           echo GITHUB_SHA=$GITHUB_SHA
-          ecoh TAG=$TAG
+          echo TAG=$TAG
       
